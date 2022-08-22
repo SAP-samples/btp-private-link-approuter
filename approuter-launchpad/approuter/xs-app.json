@@ -1,0 +1,19 @@
+{
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/sap/(.*)$",
+      "target": "/sap/$1",
+      "destination": "BusinessPartner-approuter",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
+    {
+      "source": "(.*)",
+      "target": "ui5webcomponents/$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }
+  ],
+  "welcomeFile": "/plinkfioriuiui/index.html"
+}

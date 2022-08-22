@@ -1,0 +1,30 @@
+{
+    "xsappname": "privatelink-proxy",
+    "tenant-mode": "shared",
+    "description": "Security profile of called application",
+    "scopes": [
+        {
+            "name": "uaa.user",
+            "description": "UAA"
+        },
+        {
+            "name": "$XSAPPNAME.Callback",
+            "description": "With this scope set, the callbacks for tenant onboarding, offboarding and getDependencies can be called.",
+            "grant-as-authority-to-apps": [
+                "$XSAPPNAME(application, sap-provisioning, tenant-onboarding)"
+            ]
+        }
+    ],
+    "authorities": [
+        "$XSAPPNAME.Callback"
+    ],
+    "role-templates": [
+        {
+            "name": "Token_Exchange",
+            "description": "UAA",
+            "scope-references": [
+                "uaa.user"
+            ]
+        }
+    ]
+}

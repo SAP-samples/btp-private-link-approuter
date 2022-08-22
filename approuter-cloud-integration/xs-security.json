@@ -1,0 +1,26 @@
+{
+  "xsappname": "privatelink-proxy",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "uaa.user",
+      "description": "UAA"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": [
+        "uaa.user"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+        "https://technical-field-enablement-privatelink-dev-privatelink-6d078aea.cfapps.eu20.hana.ondemand.com",
+        "https://ci-us20.it-cpi009.cfapps.us20.hana.ondemand.com/itspaces/odata/api/v1/OAuthTokenFromCode"
+    ]
+}
+}

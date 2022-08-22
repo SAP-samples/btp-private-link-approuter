@@ -1,0 +1,39 @@
+_schema-version: "3.2"
+ID: privatelink-proxy
+version: 0.0.1
+modules:
+- name: privatelink-proxy-approuter
+  type: approuter.nodejs
+  path: /
+  requires:
+  - name: privatelink-proxy_html_repo_runtime
+  - name: uaa_privatelink-proxy
+  - name: pl_privatelink-proxy
+  - name: dest_privatelink-proxy
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+resources:
+- name: privatelink-proxy_html_repo_runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: uaa_privatelink-proxy
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: privatelink-proxy-xsuaa-service
+    service-plan: application
+- name: pl_privatelink-proxy
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: privatelink
+    service-name: tfe-cal-s4-privatelink
+    service-plan: standard
+- name: dest_privatelink-proxy
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: destination
+    service-plan: lite

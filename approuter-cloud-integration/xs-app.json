@@ -1,0 +1,12 @@
+{
+  "authenticationMethod": "route",
+  "routes": [
+    {
+        "source": "^/sap/(.*)$",
+        "target": "/sap/$1",
+        "destination": "BusinessPartner-approuter",
+        "authenticationType": "xsuaa",
+        "csrfProtection": false
+    }
+  ]
+}
