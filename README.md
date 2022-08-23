@@ -1,6 +1,6 @@
 # SAP Private Link Service Use Cases for SAP Cloud Integration and SAP Launchpad  
 
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/btp-privatelink-approuter)](https://api.reuse.software/info/github.com/SAP-samples/btp-privatelink-approuter)
 
 ## Description
 
