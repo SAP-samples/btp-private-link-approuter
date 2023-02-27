@@ -23,6 +23,8 @@ If you choose BAS, select **Standalone Approuter** as an option in the template 
 
 Define the route and the destination used for the SAP Private Link connectivity. This can be done in the xs-app.json file where **blob-approuter** is the destination configured for SAP Private Link connectivity in the target SAP BTP subaccount (see destination configuration below).  
 
+>NOTE: Please change the **source** and **target** properties as required in your scenario (e.g. other path instead of /myfiles)
+
  
 ```json
 {
