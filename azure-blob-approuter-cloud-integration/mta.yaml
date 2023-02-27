@@ -30,7 +30,7 @@ resources:
   type: org.cloudfoundry.managed-service
   parameters:
     service: privatelink
-    service-name: tfe-cal-s4-privatelink
+    service-name: privatelink-blob
     service-plan: standard
 - name: dest_privatelink-proxy
   type: org.cloudfoundry.managed-service
