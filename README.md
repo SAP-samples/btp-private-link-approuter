@@ -32,6 +32,14 @@ Like the above-mentioned scenario, the main idea of this architecture is to use 
 ![solution diagram](./img/approuter-launchpad.png)
 
 
+# Azure Blob Storage connectivity to SAP Cloud Integration with help of SAP Private Link service
+
+The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between Azure Blob Storage and SAP Cloud Integration. The detailed configuration steps can follow [here](azure-blob-approuter-cloud-integration/).
+
+
+![solution diagram](../img/azure-blob-cloud-integration.png)
+
+
 ## How to achieve this?  
  
 [Application Router](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/01c5f9ba7d6847aaaf069d153b981b51.html?locale=en-US) is a package available in the public [npm repository](https://www.npmjs.com/package/@sap/approuter), usually used as a single-entry point to your applications. It can help dispatch incoming requests to other microservices, facilitate authentication & authorization, and finally integrate other SAP BTP services like the Destination service or the HTML5 Application Repository.  

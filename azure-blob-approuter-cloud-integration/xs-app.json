@@ -1,0 +1,12 @@
+{
+  "authenticationMethod": "route",
+  "routes": [
+    {
+        "source": "^/myfiles/(.*)$",
+        "target": "/myfiles/$1",
+        "destination": "blob-approuter",
+        "authenticationType": "xsuaa",
+        "csrfProtection": false
+    }
+  ]
+}
