@@ -10,6 +10,21 @@ The main idea of this architecture is to use the Application Router as a proxy f
 
 ![solution diagram](../img/azure-blob-cloud-integration.png)
 
+## Create a Service Instance for SAP PrivateLink Service
+
+You can either use the **CLI** or **BTP Cockpit** to create a service instance. Below you can find sample command.
+
+>Please note to replace the **resourceId** with your Azure Blob Storage resourceId
+
+```bash
+cf cs privatelink standard privatelink-blob -c '{"requestMessage":"Please approve blob connection","resourceId":"/subscriptions/xxxxx/resourceGroups/tests-services/providers/Microsoft.Storage/storageAccounts/xxxx","subResource":"blob"}'
+```
+
+After initiantion, remember to approve the connection request from **Azure Portal**
+
+
+
+
 
 ## Configure and deploy Application Router 
 
