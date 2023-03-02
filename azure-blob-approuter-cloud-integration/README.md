@@ -59,9 +59,10 @@ Define the route and the destination used for the SAP Private Link connectivity.
 ![Destination configuration](../img/destination-blob.png)
 
 
-After setting up the route with destination and authentication, you can deploy the Application Router to your SAP BTP subaccount 
-```json
-e.g. by  mbt build && cf deploy mta_archives/privatelink-proxy_0.0.1.mtar
+After setting up the route with destination and authentication, you can deploy the Application Router to your SAP BTP subaccount e.g. by
+
+```bash
+mbt build && cf deploy mta_archives/privatelink-proxy_0.0.1.mtar
 ```
 
 Once the Application Router is up and running, it can be used by your integration flows to connect with the Azure Blob Storage. 
