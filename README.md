@@ -34,6 +34,8 @@ Like the above-mentioned scenario, the main idea of this architecture is to use 
 
 # Azure Blob Storage connectivity to SAP Cloud Integration with help of SAP Private Link service
 
+With the help of the SAP Private Link service, Azure Blob storage can now be linked to SAP Cloud Integration, enabling the easy exchange of massive amounts of unstructured data like images and documents. This integration provides a secure solution for businesses that need to transfer unstructured data between the two platforms.
+
 The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between Azure Blob Storage and SAP Cloud Integration. The detailed configuration steps can follow [here](azure-blob-approuter-cloud-integration/).
 
 >Please note that for the moment, we cannot use SAP Private Link service directly from SAP Cloud Integration; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Cloud Integration, meanwhile product team is working to enable direct integration.
