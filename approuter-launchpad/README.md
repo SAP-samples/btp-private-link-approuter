@@ -1,6 +1,6 @@
-# SAP Private Link service for frontend applications accessible from SAP Launchpad Service
+# SAP Private Link service for frontend applications accessible from SAP Build Work Zone, Standard Edition
 
-SAP Launchpad service plays an important role to increase users’ productivity and efficiency by enabling organizations to establish a central point of access to SAP, custom-build, third-party applications, and extensions.  
+SAP Build Work Zone, Standard Edition plays an important role to increase users’ productivity and efficiency by enabling organizations to establish a central point of access to SAP, custom-build, third-party applications, and extensions.  
 
 The frontend extensions of your SAP S/4HANA system running on SAP BTP can now also benefit from the new SAP Private Link service by establishing private connectivity to your SAP backend systems.  
 
@@ -49,14 +49,14 @@ Another benefit of using Business Application Studio is, that you can add a new 
 
 ![metadata](../img/metadata.png)
 
-Please also add the **flp configuration**, so we can later register our application in the SAP Launchpad service.
+Please also add the **flp configuration**, so we can later register our application in the SAP Build Work Zone, Standard Edition.
 
 ![FLP](../img/flp-wizard.png)
 
-## Expose the application as a content provider for the SAP Launchpad service
+## Expose the application as a content provider for the SAP Build Work Zone
 
-To expose our app with a **Standalone Application Router** as a Content Provider for SAP Launchpad service, a couple of further steps are required. 
-First of all, we need to change the app settings to a multitenant application by using the saas-registry service. Then we can subscribe to the application and add the app to SAP Launchpad Service. Please follow the [help documentation](https://help.sap.com/docs/Portal_Service/ad4b9f0b14b0458cad9bd27bf435637d/8a25fddb747f4ba992969049de96f836.html?locale=en-US) or have a look at the provided [sample application](mta.yaml).
+To expose our app with a **Standalone Application Router** as a Content Provider for SAP Build Work Zone, a couple of further steps are required. 
+First of all, we need to change the app settings to a multitenant application by using the saas-registry service. Then we can subscribe to the application and add the app to SAP Build Work Zone. Please follow the [help documentation](https://help.sap.com/docs/Portal_Service/ad4b9f0b14b0458cad9bd27bf435637d/8a25fddb747f4ba992969049de96f836.html?locale=en-US) or have a look at the provided [sample application](mta.yaml).
 
 >Note: This step is required since we are not using the Managed Application Router
 
@@ -64,7 +64,7 @@ After adding the required configuration please deploy the app and subscribe to t
 
 ![saas-subscription](../img/saas-subscription.png)
 
-## Register the frontend application in the SAP Launchpad service
+## Register the frontend application in the SAP Build Work Zone, Standard Edition
 
 Go to Content Manager and look for "PrivateLinkProxy" as a provider (this will be available once you subscribe to the application in the previous step)
 
@@ -78,13 +78,13 @@ Go to "My Content" and add the selected Fiori application to your **Group, Catal
 
 ![saas-subscription](../img/flp-app-catalog.png)
 
-Launch the Launchpad, where you will find your Fiori application with SAP Private Link service connectivity
+Launch the SAP Build Work Zone, where you will find your Fiori application with SAP Private Link service connectivity
 
 ![saas-subscription](../img/flp-plink-app.png)
 
 ## Summary
 
-Congratulations, you successfully registered your Fiori application with Standalone Application Router to SAP Launchpad with SAP Private Link service connectivity
+Congratulations, you successfully registered your Fiori application with Standalone Application Router to SAP Build Work Zone, Standard Edition with SAP Private Link service connectivity
 
 
 
