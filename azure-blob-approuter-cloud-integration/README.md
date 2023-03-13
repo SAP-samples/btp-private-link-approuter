@@ -2,7 +2,7 @@
 
 The SAP Cloud Integration capability of SAP Integration Suite enables enterprises to connect different systems and applications in hybrid and cloud landscapes, that are developed and maintained on different technology stacks. These stacks, usually follow different security standards and requirements. 
 
-With the help of the SAP Private Link service, you can extend your hybrid integration scenarios to suit stricter security policies and communicate with your workloads on Microsoft Azure through private network connectivity. 
+With the help of the SAP Private Link service, you can extend your hybrid integration scenarios to suit stricter security policies and communicate with your workloads on Microsoft Azure through private network connectivity. Azure Blob storage can now be linked to SAP Cloud Integration, enabling the easy exchange of massive amounts of unstructured data like images and documents. This integration provides a secure solution for businesses that need to transfer unstructured data between the two platforms.
 
 The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between Azure Blob Storage and SAP Cloud Integration. Detailed configuration steps you can find below.
 
