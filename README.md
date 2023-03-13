@@ -1,4 +1,4 @@
-# SAP Private Link Service Use Cases for SAP Cloud Integration and SAP Launchpad  
+# SAP Private Link Service Use Cases for SAP Cloud Integration and SAP Build Work Zone, Standard Edition
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/btp-privatelink-approuter)](https://api.reuse.software/info/github.com/SAP-samples/btp-privatelink-approuter)
 
@@ -17,15 +17,15 @@ The main idea of this architecture is to use the Application Router as a proxy f
 ![solution diagram](./img/approuter-cloudintegration.png)
 
 
-## SAP Private Link service for frontend applications accessible from SAP Launchpad Service 
+## SAP Private Link service for frontend applications accessible from SAP Build Work Zone, Standard Edition
 
-SAP Launchpad service plays an important role to increase users’ productivity and efficiency by enabling organizations to establish a central point of access to SAP, custom-build, third-party applications, and extensions.  
+SAP Build Work Zone, Standard Edition plays an important role to increase users’ productivity and efficiency by enabling organizations to establish a central point of access to SAP, custom-build, third-party applications, and extensions.  
 
 The frontend extensions of your SAP S/4HANA system running on SAP BTP can now also benefit from the new SAP Private Link service by establishing private connectivity to your SAP backend systems.  
 
 Like the above-mentioned scenario, the main idea of this architecture is to use the Application Router as a proxy for the private connectivity between SAP S/4HANA and frontend extensions running on SAP BTP. Detailed configuration steps can be found [here](approuter-launchpad/).
 
->Please note that for the moment, we cannot use SAP Private Link service directly from SAP Launchpad service; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Launchpad service, meanwhile product team is working to enable direct integration.
+>Please note that for the moment, we cannot use SAP Private Link service directly from SAP Build Work Zone; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Build Work Zone, Standard Edition, meanwhile product team is working to enable direct integration.
 
 >Please note that this scenario covers only the frontend extensions. The federated SAP S/4HANA content is out of scope.
 
