@@ -1,8 +1,6 @@
-# SAP Private Link service use cases for SAP Cloud Integration and SAP Launchpad  
+# SAP Private Link Service Use Cases for SAP Cloud Integration and SAP Build Work Zone, Standard Edition
 
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/btp-privatelink-approuter)](https://api.reuse.software/info/github.com/SAP-samples/btp-privatelink-approuter)
 
 ## Description
 
@@ -19,19 +17,30 @@ The main idea of this architecture is to use the Application Router as a proxy f
 ![solution diagram](./img/approuter-cloudintegration.png)
 
 
-## SAP Private Link service for frontend applications accessible from SAP Launchpad Service 
+## SAP Private Link service for frontend applications accessible from SAP Build Work Zone, Standard Edition
 
-SAP Launchpad service plays an important role to increase users’ productivity and efficiency by enabling organizations to establish a central point of access to SAP, custom-build, third-party applications, and extensions.  
+SAP Build Work Zone, Standard Edition plays an important role to increase users’ productivity and efficiency by enabling organizations to establish a central point of access to SAP, custom-build, third-party applications, and extensions.  
 
 The frontend extensions of your SAP S/4HANA system running on SAP BTP can now also benefit from the new SAP Private Link service by establishing private connectivity to your SAP backend systems.  
 
 Like the above-mentioned scenario, the main idea of this architecture is to use the Application Router as a proxy for the private connectivity between SAP S/4HANA and frontend extensions running on SAP BTP. Detailed configuration steps can be found [here](approuter-launchpad/).
 
->Please note that for the moment, we cannot use SAP Private Link service directly from SAP Launchpad service; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Launchpad service, meanwhile product team is working to enable direct integration.
+>Please note that for the moment, we cannot use SAP Private Link service directly from SAP Build Work Zone; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Build Work Zone, Standard Edition, meanwhile product team is working to enable direct integration.
 
 >Please note that this scenario covers only the frontend extensions. The federated SAP S/4HANA content is out of scope.
 
 ![solution diagram](./img/approuter-launchpad.png)
+
+
+# Azure Blob Storage connectivity to SAP Cloud Integration with help of SAP Private Link service
+
+With the help of the SAP Private Link service, Azure Blob storage can now be linked to SAP Cloud Integration, enabling the easy exchange of massive amounts of unstructured data like images and documents. This integration provides a secure solution for businesses that need to transfer unstructured data between the two platforms.
+
+The main idea of this architecture is to use the Application Router as a proxy for the private connectivity between Azure Blob Storage and SAP Cloud Integration. The detailed configuration steps can follow [here](azure-blob-approuter-cloud-integration/).
+
+>Please note that for the moment, we cannot use SAP Private Link service directly from SAP Cloud Integration; nevertheless, we can bridge this gap with help of SAP’s Application Router (approuter), which can play the role of a proxy between SAP Private Link service and SAP Cloud Integration, meanwhile product team is working to enable direct integration.
+
+![solution diagram](./img/azure-blob-cloud-integration.png)
 
 
 ## How to achieve this?  
